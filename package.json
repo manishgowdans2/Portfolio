@@ -1,8 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "Portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://manishgowdans2.github.io/portfolio",
+  "homepage": "https://manishgowdans2.github.io/Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
