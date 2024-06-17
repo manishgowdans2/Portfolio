@@ -1,18 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./NavbarStyle.css";
 import { Link } from 'react-router-dom';
 
 const Navbar = ()=>
 {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
+    const handleScroll = () => {
+        if(window.scrollY > 50)
+            {
+                setScrolled(true);
+            }
+            else{
+                setScrolled(false);
+            }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', handleScroll);
+        return() => {
+            window.removeEventListener('scroll',handleScroll)
+        }
+    },[])
     const toggleMenu = () =>{
         setIsOpen(!isOpen);
     }
     return(
-        <div className='Header'>
+        <div className={`Header ${scrolled ? 'scrolled' : ''}`}>
             <div className='logo'>
-            <Link className='logoText' to="/">Portfolio</Link>
+            <Link className={`logoText ${scrolled ? 'scrolled' : ''}`} to="/Portfolio">Portfolio</Link>
             </div>
             <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
             <ul>

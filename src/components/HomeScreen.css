@@ -4,60 +4,56 @@
     display: flex;
     height: 100vh;
     justify-content: center;
-    background: linear-gradient(135deg, #343112, #f0e2b8);
+    /* background: linear-gradient(135deg, #7964f3, #0f1271); */
   }
   
   .profile-screen-part-1{
-    width: 60%;
-    margin-top: 5.5rem;
-    height: 50vh;
+    width: 50%;
+    margin-top: 2.5rem;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .profile-screen-part-2 {
-    width: 40%;
-    text-align: center;
-    padding: 20px;
-    margin-top: 5.5rem;
-    height: 20vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    height: 70vh;
 
   }
   
-  .picture {
-    width: 70%;
-    height: 300%;
+  /* .picture {
+    width: 90%;
+    height: 80vh;
     border-radius: 50%;
-    margin-bottom: 20px;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  } */
   
   .name {
     font-size: 2.5rem;
     font-weight: bold;
-    display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    color:rgb(0, 0, 150);
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .role {
     font-size: 2.5rem;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    margin-top: -2rem;
   }
   
   .bio {
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgba(2, 9, 66, 0.8);
   }
   
   .email {
@@ -75,70 +71,87 @@
   }
   
   .link {
-    font-size: 1.5rem;
-    color: #d1d1e9;
+    font-size: 2.5rem;
+    color: #ebc800;
     text-decoration: none;
-    border: 2px solid #d1d1e9;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
   }
   
-  .link:hover {
-    background-color: #d1d1e9;
-    color: #1f1c2c;
+  .link:hover { 
+    color: #730000;
   }
 
-  /* Mobile Styles */
+  /* Tab Styles */
   @media (max-width: 768px) {
     .home-container {
       display: flex;
       flex-direction: column;
-      height: 100vh;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #343112, #f0e2b8);
+      /* background: linear-gradient(135deg, #7964f3, #0f1271); */
+    }
+
+    .profile-screen-part-1{
+      margin-top: 10rem;
+    }
+  
+    .name {
+      font-size:  2rem;
+      font-weight: bold;
+      color:rgb(0, 0, 150);
+    font-family: 'Times New Roman', Times, serif;
+    
+    }
+  
+    .role {
+      margin-top: -1rem;
+      font-size:1.9rem;
+      font-weight: bold;
+    
+    }
+    
+    .bio {
+      font-size: 1.3rem;
+      text-align: center; 
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: rgba(2, 9, 66, 0.8);
+    }
+    
+  }
+  
+
+  /* Mobile View Styles */
+  @media (max-width: 458px) {
+    .home-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 45%;
     }
 
 
     .profile-screen-part-1{
-      margin-top: -1rem;
-      display: flex;
-      flex-direction: column;
+      margin-top: 2rem;
     }
-  
-    .profile-screen-part-2 {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      margin-top: 4.5rem;
-    }
-    
-    .picture {
-      width: 120%;
-      height: 300%;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      object-fit: cover;
-      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
-    }
-
     .name {
-      font-size:  2.5rem;
+      font-size:  1.5rem;
       font-weight: bold;
-  
+      color:rgb(0, 0, 150);
+    font-family: 'Times New Roman', Times, serif;
     }
   
     .role {
-      font-size:2.1rem;
+      font-size:1.4rem;
       font-weight: bold;
     
     }
     
     .bio {
       font-size: 1.2rem; 
-      color: rgba(255, 255, 255, 0.8);
     }
     
   }
