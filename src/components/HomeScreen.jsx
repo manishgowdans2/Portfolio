@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './HomeScreen.css';
-import profile from '../assets/profile.jpg'
+import profile from '../assets/profile.jpeg'
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const HomeScreen = () =>{

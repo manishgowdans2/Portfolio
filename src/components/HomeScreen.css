@@ -24,11 +24,11 @@
   
   .picture {
     width: 70%;
-    height: 250%;
+    height: 300%;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 10px solid rgba(21, 21, 21, 0.5);
     object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
   .name {
@@ -87,5 +87,59 @@
   .link:hover {
     background-color: #d1d1e9;
     color: #1f1c2c;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .home-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #343112, #f0e2b8);
+    }
+
+
+    .profile-screen-part-1{
+      margin-top: -1rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .profile-screen-part-2 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin-top: 4.5rem;
+    }
+    
+    .picture {
+      width: 120%;
+      height: 300%;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .name {
+      font-size:  2.5rem;
+      font-weight: bold;
+  
+    }
+  
+    .role {
+      font-size:2.1rem;
+      font-weight: bold;
+    
+    }
+    
+    .bio {
+      font-size: 1.2rem; 
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
   }
   
