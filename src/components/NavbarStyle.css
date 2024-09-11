@@ -3,18 +3,22 @@
     justify-content: space-between;
     align-items: center;
     width: auto;
-    padding: 10px 10px; 
+    padding: 10px 5px; 
     border-bottom: 3px solid rgba(1, 0, 0, 0.8); 
-    background: linear-gradient(135deg, rgba(219, 221, 253, 0.8) 25%, rgba(219, 218, 241, 0.8) 50%, rgba(245, 245, 245, 0.8) 75%);
+    /* background: linear-gradient(135deg, rgba(219, 221, 253, 0.8) 25%, rgba(219, 218, 241, 0.8) 50%, rgba(245, 245, 245, 0.8) 75%); */
+    background: darkblue;
+    transition: background-color 1s ease, padding 0.5s ease, border-bottom 0.5s ease, border-above 0.5s ease;
   }
   
   .Header.scrolled {
     position: fixed;
+    top: 0;
     width: 100%;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-bottom: 3px solid rgba(1, 0, 0, 0.8);
-    background: linear-gradient(135deg, rgba(2, 13, 143, 0.8) 25%, rgba(71, 66, 229, 0.8) 50%, rgba(128, 111, 255, 0.8) 75%);
-    z-index: 2;
+    background: darkblue;
+    z-index: 1;
+    transition: background-color 1s ease, padding 0.5s ease, border-bottom 0.5s ease;
   }
   
 
@@ -29,7 +33,7 @@
     font-size: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: rgb(17, 3, 147);
+    color: rgb(240, 240, 125);
   }
 
   .logoText.scrolled {
@@ -61,7 +65,7 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
-    color: rgba(2, 13, 143, 0.8);  
+    color: rgba(240, 237, 144);  
   }
   
   .hamburger {
