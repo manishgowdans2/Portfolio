@@ -2,29 +2,30 @@
 
 .home-container {
     display: flex;
-    height: 100vh;
+    height: 70vh;
     justify-content: center;
     /* background: linear-gradient(135deg, #7964f3, #0f1271); */
   }
   
   .profile-screen-part-1{
     width: 50%;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 
   .profile-screen-part-2 {
     width: 50%;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    height: 70vh;
-
+    height: 68vh;
   }
   
   /* .picture {
@@ -98,7 +99,7 @@
     }
   
     .name {
-      font-size:  2rem;
+      font-size: 2rem;
       font-weight: bold;
       color:rgb(0, 0, 150);
     font-family: 'Times New Roman', Times, serif;
@@ -135,8 +136,9 @@
 
 
     .profile-screen-part-1{
-      margin-top: 2rem;
+      margin-top: 15rem;
     }
+
     .name {
       font-size:  1.5rem;
       font-weight: bold;

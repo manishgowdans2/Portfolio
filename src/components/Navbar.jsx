@@ -10,7 +10,7 @@ const Navbar = ()=>
     const handleScroll = () => {
         if(window.scrollY > 5)
             {
-                setScrolled(true);
+                setScrolled(false);
             }
             else{
                 setScrolled(false);
