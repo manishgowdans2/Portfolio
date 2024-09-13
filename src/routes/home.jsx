@@ -12,9 +12,6 @@ const Home = () =>
     <div>
     <HomeScreen/>
     </div>
-    <div>
-    <ProjectsCarousel/>
-    </div>
     </>
 }
 
