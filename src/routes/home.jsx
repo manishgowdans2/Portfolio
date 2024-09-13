@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import HomeScreen from '../components/HomeScreen';
+import ProjectsCarousel from '../components/ProjectsCarousel';
 import "./home.css";
 const Home = () =>
 {
@@ -8,10 +9,12 @@ const Home = () =>
     <div className='navbar'>
     <Navbar/>
     </div>
-    <div style={{ height: '1500px' }}>
+    <div>
     <HomeScreen/>
     </div>
-
+    <div>
+    <ProjectsCarousel/>
+    </div>
     </>
 }
 
