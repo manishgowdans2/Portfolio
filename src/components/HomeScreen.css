@@ -4,7 +4,7 @@
     display: flex;
     height: 70vh;
     justify-content: center;
-    /* background: linear-gradient(135deg, #7964f3, #0f1271); */
+    background: linear-gradient(135deg, #1a0397, #282c95);
   }
   
   .profile-screen-part-1{
@@ -15,7 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .profile-screen-part-2 {
@@ -40,21 +39,22 @@
     font-weight: bold;
     text-align: center;
     justify-content: center;
-    color:rgb(0, 0, 150);
+    color:white;
     font-family: 'Times New Roman', Times, serif;
   }
 
   .role {
-    font-size: 2.5rem;
+    font-size: 1,6rem;
     font-weight: bold;
-    margin-top: -2rem;
+    margin-top: -1rem;
+    color: rgb(255, 247, 0);
   }
   
   .bio {
     font-size: 1.2rem;
     font-weight: bold;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: rgba(2, 9, 66, 0.8);
+      color:rgb(255, 247, 0);
   }
   
   .email {
@@ -73,7 +73,7 @@
   
   .link {
     font-size: 2.5rem;
-    color: #ebc800;
+    color: #01010c;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -81,7 +81,7 @@
   }
   
   .link:hover { 
-    color: #730000;
+    color: #0015b8;
   }
 
   /* Tab Styles */
@@ -91,8 +91,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* background: linear-gradient(135deg, #7964f3, #0f1271); */
       height: 40%;
+      width: auto;
     }
 
     .profile-screen-part-1{
@@ -106,7 +106,6 @@
     .name {
       font-size: 2rem;
       font-weight: bold;
-      color:rgb(0, 0, 150);
     font-family: 'Times New Roman', Times, serif;
     
     }
@@ -123,7 +122,6 @@
       text-align: center; 
       font-weight: bold;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: rgba(2, 9, 66, 0.8);
     }
     
   }
@@ -136,15 +134,31 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 45%;
+      height: 100%;
+      width: 100%;
     }
 
-
-    .profile-screen-part-1{
-      margin-top: -2rem;
+    .profile-screen-part-1,
+    .profile-screen-part-2 {
+      width: 100%; /* Ensure the sections take full width */
+      margin-top: 6rem; /* Adjust margin for proper spacing */
     }
-    .profile-screen-part-2{
-      margin-top: -20rem;
+  
+    .profile-screen-part-1 {
+      height: auto; /* Let the height adjust based on content */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .profile-screen-part-2 {
+      height: auto; /* Let the height adjust based on content */
+      padding: 10px; /* Adjust padding for better spacing */
+      display: flex;
+      flex-direction: column; /* Ensure contents stack vertically */
+      justify-content: center;
+      align-items: center;
     }
 
     .name {

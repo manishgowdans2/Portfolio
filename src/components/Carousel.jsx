@@ -82,9 +82,9 @@ const goToCard = (index) =>{
     <div className="carousel-container">
       <div className={`carousel-card ${transition ? 'transition' : ''}`}>
         <h2 className='title'>{cards[currentIndex].title}</h2>
-        {
+        <p>{
             cards[currentIndex].content
-        }
+        }</p>
       </div>
       <div className='pagination'>
         {
