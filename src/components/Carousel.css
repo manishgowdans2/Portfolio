@@ -8,7 +8,7 @@
   .carousel-card {
     width: 50vh;
     height: 40vh;
-    background:linear-gradient(to right, #003366, #0066cc);
+    background:linear-gradient(135deg, #0a0909, #242424, #28282b);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
