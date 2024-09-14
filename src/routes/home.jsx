@@ -4,10 +4,12 @@ import HomeScreen from '../components/HomeScreen';
 import "./home.css";
 const Home = () =>
 {
-    return <>
+    return(
+    <div>
     <Navbar/>
     <HomeScreen/>
-    </>
+    </div>
+    )
 }
 
 export default Home;

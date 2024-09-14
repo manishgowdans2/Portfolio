@@ -6,17 +6,16 @@
   }
   
   .carousel-card {
-    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    width: 60vh;
     height: 40vh;
     background:linear-gradient(135deg, #0a0909, #242424, #28282b);
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 30px 20px 20px 20px;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 10px 2px;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
   
@@ -25,7 +24,6 @@
     opacity: 1;
   }
   .carousel-card h2 {
-    margin-top: 0;
     text-align: center;
     color: #d7ed44;
     font-family: 'Times New Roman', Times, serif;
@@ -33,9 +31,10 @@
   }
 
   .carousel-card p {
+    margin-top: -40px;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .pagination {
@@ -59,15 +58,47 @@
     background-color: #0b0060;
   }
 
-  @media (max-width: 458px) {
+  @media (max-width: 758px) {
+    .carousel-card {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .carousel-card h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #d7ed44;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2rem;
+    }
+  
+    .carousel-card p{
+      margin-left: -60px;
+      text-align: left;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 358px) {
     .carousel-card {
         width: 40vh;
         height: 30vh;
     }
 
+    .carousel-card h2 {
+      text-align: center;
+      color: #d7ed44;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1rem;
+    }
+  
     .carousel-card p {
+      text-align: left;
       color: white;
-      font-size: 1.3rem;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 0.5rem;
     }
   }
   

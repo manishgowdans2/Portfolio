@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./NavbarStyle.css";
 import { Link } from 'react-router-dom';
-
+import NavbarLogo from '../assets/NavbarLogo.png'
 const Navbar = ()=>
 {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = ()=>
     return(
         <div className={`Header ${scrolled ? 'scrolled' : ''}`}>
             <div className='logo'>
-            <Link className={`logoText ${scrolled ? 'scrolled' : ''}`} to="/Portfolio">Portfolio</Link>
+            <Link className={`logoText ${scrolled ? 'scrolled' : ''}`} to="/Portfolio">Portfolio | SDE</Link>
             </div>
             <div className={`nav-menu ${isOpen ? 'open' : ''}`}>
             <ul>
